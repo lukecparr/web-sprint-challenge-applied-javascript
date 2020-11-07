@@ -40,6 +40,7 @@ function cardCreator(obj) {
 	const headline = document.createElement('div');
 	headline.classList.add('headline');
 	headline.textContent = obj.headline;
+	headline.addEventListener('click', event => console.log(event.target.textContent))
 	
 	const author = document.createElement('div');
 	author.classList.add('author');
